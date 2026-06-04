@@ -196,7 +196,11 @@ int remove_object(int id) {
     for (int i = 0; i < object_count; ++i) {
         if (objects[i].id == id) {
             for (int j = i; j < object_count - 1; ++j) {
+<<<<<<< HEAD
                 objects[j] = objects[j + 1];
+=======
+                objects[j] = objects[j+1];
+>>>>>>> 2d3e19c (Add 2D graphics editor program)
             }
             object_count--;
             redraw_canvas();
